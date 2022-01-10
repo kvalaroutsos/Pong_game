@@ -8,7 +8,7 @@ screen=Screen()
 screen.setup(width=800, height=600)
 screen.bgcolor('black')
 screen.title('PONG GAME1')
-screen.tracer(0)  # Απενεργοποιεί τα animations
+screen.tracer(0) 
 
 l_paddle=Paddle((-350,0))
 r_paddle=Paddle((350,0))
@@ -24,7 +24,7 @@ score2.player_2_score()
 
 game_is_on=True
 while game_is_on:
-    screen.update()  # Animations ενεργα για να δείξει τα paddle
+    screen.update()  
     time.sleep(ball.move_speed)
 
     ball.ball_move()
